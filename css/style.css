@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0 auto; 
+    padding: 0;
 }
 
 #container {
@@ -11,14 +12,104 @@
 
 header {
     height: 100px;
-    background-color: #E579E6;
+    /* background-color: #E579E6; */
     margin-bottom: 15px;   
 }
 
+.logo {
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid grey;
+    padding-right: 10px;
+
+}
+
+nav {
+    margin-top: 20px;
+
+
+    
+}
+
+nav ul li {
+    list-style-type: none;
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 0px;
+    text-transform: uppercase;
+    padding-right: 15px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+
 main {
     height: 400px;
-    background-color: #E1D67A;
+    background-color: grey; 
     margin-bottom: 15px;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.banner {
+    height: 400px;
+    width: 1000px;
+    position: absolute;
+}
+
+.banner1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.6;
+}
+
+.banner2 {
+    display: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.6;
+}
+
+.banner:hover .banner1 {
+    width: 100%; 
+    display: none;
+}
+
+.banner:hover .banner2 {
+    width: 100%; 
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    width: 55%;
+    top: 260px;
+    padding-left: 35px;
+    color: white;
+}
+
+.banner-text h1 {
+    font-weight: normal;
+    line-height: 28px;
+    padding-bottom: 5px;
 }
 
 .top_content {
