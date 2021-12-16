@@ -13,22 +13,19 @@
 header {
     height: 100px;
     /* background-color: #E579E6; */
-    margin-bottom: 15px;   
+    margin-bottom: 15px;      
 }
 
+/* Logo */
 .logo {
     height: 50px;
     line-height: 50px;
     border-right: 1px solid lightgrey;
     padding-right: 13px;
-
 }
-
+/* Menù */
 nav {
-    margin-top: 20px;
-
-
-    
+    margin-top: 20px;  
 }
 
 nav ul li {
@@ -37,8 +34,7 @@ nav ul li {
     display: inline-block;
     padding-left: 0px;
     text-transform: uppercase;
-    padding-right: 15px;
-    
+    padding-right: 15px;  
 }
 
 nav ul li a {
@@ -48,9 +44,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: none;
-    background-color: #DEDEDE;
- 
-   
+    background-color: #DEDEDE; 
 }
 
 nav ul li a:visited {
@@ -67,6 +61,7 @@ main {
     border-radius: 10px 10px 10px 10px;
 }
 
+/* Banner principale */
 .banner {
     height: 400px;
     width: 1000px;
@@ -90,6 +85,7 @@ main {
     opacity: 0.6;
 }
 
+/* Swap Image */
 .banner:hover .banner1 {
     width: 100%; 
     display: none;
@@ -114,6 +110,7 @@ main {
     padding-bottom: 5px;
 }
 
+/* Intestazione contenuti */
 .top_content {
     height: 88px;
     width: 100%;
@@ -138,8 +135,7 @@ main {
 section {
     /* background-color: #1083E9; */
     padding-top: 10px;
-    padding-bottom: 10px;
-   
+    padding-bottom: 10px;  
 }
 
 section::after {
@@ -148,6 +144,7 @@ section::after {
     clear: both;
 }
 
+/* Colonna sinistra */
 .col_left {
     min-height: 500px;
     width: 200px;
@@ -159,17 +156,13 @@ section::after {
 .swapimg {
     height: 200px;
     width: 100%;
-
     border-radius: 10px 10px 10px 10px;
-
     background-color: grey;
     position: relative;
-
 }
 
 
 .imgA {
-  
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -177,9 +170,7 @@ section::after {
     opacity: 0.6;
     position: absolute;
     left: 0px;
-    top: 0px;
- 
-    
+    top: 0px;   
 }
 
 .imgB {
@@ -213,7 +204,7 @@ section::after {
 }
 
 
-
+/* Colonna centrale */
 .center {
     min-height: 500px;
     width: calc(1000px - 400px - 20px);
@@ -221,6 +212,7 @@ section::after {
     float: left;
 }
 
+/* Colonna destra */
 .col_right {
     min-height: 500px;
     width: 200px;
@@ -229,6 +221,7 @@ section::after {
     margin-left: 10px;
 }
 
+/* Footer */
 footer {
     height: 45px;
     /* background-color: #8801FE; */
